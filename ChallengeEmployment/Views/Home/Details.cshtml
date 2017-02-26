@@ -8,7 +8,7 @@
 
 <div>
     <h4>Clients</h4>
-    <hr />
+    <hr/>
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -66,9 +66,50 @@
             @Html.DisplayFor(model => model.DNI)
         </dd>
 
+
+        @if (Model.CompanyName != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CompanyName)
+            </dd>
+        }
+        @if (Model.Twitter != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Twitter)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Twitter)
+            </dd>
+        }
+        @if (Model.Genre != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Genre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Genre)
+            </dd>
+        }
+        @if (Model.Interest != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Interest)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Interest)
+            </dd>
+        }
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Edit", "Edit", new {Model.id}) |
     @Html.ActionLink("Back to List", "Index")
 </p>

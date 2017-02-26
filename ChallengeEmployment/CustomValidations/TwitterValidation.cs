@@ -16,7 +16,7 @@ namespace ChallengeEmployment.CustomValidations
             {
                 return true;
             }
-            if (!cuenta.StartsWith("@"))
+            if (cuenta.StartsWith("@"))
             {
                 return false;
             }

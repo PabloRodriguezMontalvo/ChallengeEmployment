@@ -11,7 +11,7 @@ namespace ChallengeEmployment.UnitofWork
     public class UnitOfWork : IUnitofWork, IDisposable
     {
 
-        NewAppEntities2 context = new NewAppEntities2(); //TKPruebasEntities es el contexto de Entity Framework (Model.Context)
+        NewAppEntities2 context = new NewAppEntities2(); 
 
         public UnitOfWork()
         {
