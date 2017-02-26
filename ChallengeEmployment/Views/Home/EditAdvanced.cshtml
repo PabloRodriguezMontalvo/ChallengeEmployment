@@ -83,11 +83,12 @@
       
         $('.selectpicker').select2({
             placeholder: 'Select an option',
-            multiple: 'multiple'
+            multiple: 'multiple',
+    
+        });
+        $(".selectpicker").val(res).trigger("change");
 
-        }).select2('data', res);
 
-       
     });
 
  
